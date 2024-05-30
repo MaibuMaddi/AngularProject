@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+    <form action="">
+        <h1>Show hide and Password</h1>
+        <div class="input-group mb-3">
+            <input [type]="type1" class="form-control" placeholder="Enter Password">
+            <button class="btn btn-primary" type="button" (click)="abc('text')">Show</button>
+            <button class="btn btn-danger" type="button" (click)="abc('password')">Hide</button>
+          </div>
+    </form>
+</div>
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 max-auto">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h1>Counter</h1>
+                </div>
+                <div class="card-body text-center">
+                    <h1>{{counter}}</h1>
+                    <button class="btn btn-danger me-2" (click)="dec()">Decrement</button>
+                    <button class="btn btn-success"(click)="inc()">Increment</button>
+                </div>
+               
+            </div>
+ 
+        </div>
+    </div>
+</div>
+ 
+<app-footer></app-footer>
